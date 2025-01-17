@@ -32,12 +32,6 @@ const teamStructure = {
       bio: "Mike's financial acumen has been instrumental in our company's growth and fiscal responsibility.",
       avatarUrl: "/placeholder.svg?height=400&width=400",
     },
-    {
-      name: "Sarah Lee",
-      role: "CMO",
-      bio: "Sarah's innovative marketing strategies have put our brand on the map and continue to drive our market presence.",
-      avatarUrl: "/placeholder.svg?height=400&width=400",
-    },
   ],
 }
 
