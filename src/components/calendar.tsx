@@ -1,14 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-import { Card, CardContent } from "@/components/ui/card"
-
 export const Calendar = () => {
-  const [calendarSrc, setCalendarSrc] = useState('https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York')
 
-  const changeCalendar = (newSrc: string) => {
-    setCalendarSrc(newSrc)
-  }
+  const calendarSrc = `https://calendar.google.com/calendar/embed?src=ceo%40greptile.com&ctz=America%2FLos_Angeles&mode=DAY`
 
   return (
     <div className="w-full h-full">
@@ -22,4 +16,3 @@ export const Calendar = () => {
     </div>
   )
 }
-
