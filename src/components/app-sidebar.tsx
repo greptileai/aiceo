@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from "react"
-import { Home, Calendar, Settings, MessageSquare, Users } from 'lucide-react'
+import { Home, Calendar, ChartBar, Settings, MessageSquare, Users } from 'lucide-react'
 import { usePathname } from "next/navigation"
 
 import { cn } from "@/lib/utils"
@@ -20,6 +20,7 @@ import {
 const navItems = [
   { icon: Home, label: "Home", href: "/" },
   { icon: Calendar, label: "Calendar", href: "/calendar" },
+  { icon: ChartBar, label: "Metrics", href: "/metrics" },
   { icon: MessageSquare, label: "Chat", href: "/chat" },
   { icon: Users, label: "Team", href: "/team" },
   { icon: Settings, label: "Settings", href: "/settings" },
