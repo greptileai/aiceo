@@ -2,7 +2,9 @@ import { Calendar } from "@/components/calendar";
 
 const CalendarPage = () => {
   return (
-    <Calendar />
+    <div className="flex w-full h-full">
+      <Calendar />
+    </div>
   )
 }
 

@@ -11,19 +11,15 @@ export const Calendar = () => {
   }
 
   return (
-    <Card className="w-full max-w-4xl mx-auto">
-      <CardContent className="p-6">
-        <div className="aspect-video">
-          <iframe 
-            src={calendarSrc}
-            style={{border: 0}} 
-            width="100%" 
-            height="100%"
-            title="Interactive Calendar"
-          ></iframe>
-        </div>
-      </CardContent>
-    </Card>
+    <div className="w-full h-full">
+      <iframe 
+        src={calendarSrc}
+        style={{border: 0}} 
+        width="100%" 
+        height="100%"
+        title="Interactive Calendar"
+      ></iframe>
+    </div>
   )
 }
 
