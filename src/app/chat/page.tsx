@@ -29,7 +29,7 @@ export default function ChatPage() {
           {messages.map(m => (
             <div key={m.id} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
               <div className={`flex max-w-[80%] ${m.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
-                <Avatar className={`h-8 w-8 ${m.role === 'user' ? 'ml-2' : 'mr-2'}`}>
+                <Avatar className={`h-12 w-12 ${m.role === 'user' ? 'ml-2' : 'mr-2'}`}>
                   <AvatarImage src={m.role === 'user' ? "/user-avatar.png" : "/ai-avatar.png"} />
                   <AvatarFallback>{m.role === 'user' ? 'You' : 'CEO'}</AvatarFallback>
                 </Avatar>
@@ -39,20 +39,6 @@ export default function ChatPage() {
               </div>
             </div>
           ))}
-          
-          {isTyping && (
-            <div className="flex justify-start">
-              <div className="flex max-w-[80%]">
-                <Avatar className="h-8 w-8 mr-2">
-                  <AvatarImage src="/ai-avatar.png" />
-                  <AvatarFallback>CEO</AvatarFallback>
-                </Avatar>
-                <div className="rounded-lg p-4 bg-gray-100">
-                  <span className="animate-pulse">CEO is typing...</span>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </ScrollArea>
 
