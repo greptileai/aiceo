@@ -22,7 +22,6 @@ const navItems = [
   { icon: Calendar, label: "Calendar", href: "/calendar" },
   { icon: MessageSquare, label: "Chat", href: "/chat" },
   { icon: Users, label: "Team", href: "/team" },
-  { icon: Settings, label: "Settings", href: "/settings" },
 ]
 
 export function AppSidebar() {

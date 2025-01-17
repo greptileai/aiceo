@@ -9,20 +9,16 @@ export default function DashboardPage() {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Company Metrics Dashboard</h1>
-      <Tabs defaultValue="ceo" className="space-y-4">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="ceo">CEO Mode</TabsTrigger>
+      <Tabs defaultValue="investor" className="space-y-4">
+        <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="investor">Investor Mode</TabsTrigger>
-          <TabsTrigger value="employee">Employee Mode</TabsTrigger>
+          <TabsTrigger value="ceo">CEO Mode</TabsTrigger>
         </TabsList>
-        <TabsContent value="ceo">
-          <CEODashboard />
-        </TabsContent>
         <TabsContent value="investor">
           <InvestorDashboard />
         </TabsContent>
-        <TabsContent value="employee">
-          <EmployeeDashboard />
+        <TabsContent value="ceo">
+          <CEODashboard />
         </TabsContent>
       </Tabs>
     </div>
