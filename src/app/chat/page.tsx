@@ -31,7 +31,7 @@ export default function ChatPage() {
               <div className={`flex max-w-[80%] ${m.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
                 <Avatar className={`h-8 w-8 ${m.role === 'user' ? 'ml-2' : 'mr-2'}`}>
                   <AvatarImage src={m.role === 'user' ? "/user-avatar.png" : "/ai-avatar.png"} />
-                  <AvatarFallback>{m.role === 'user' ? 'U' : 'AI'}</AvatarFallback>
+                  <AvatarFallback>{m.role === 'user' ? 'You' : 'CEO'}</AvatarFallback>
                 </Avatar>
                 <div className={`rounded-lg p-4 ${m.role === 'user' ? 'bg-white border' : 'bg-gray-100'}`}>
                   {m.content}
@@ -45,10 +45,10 @@ export default function ChatPage() {
               <div className="flex max-w-[80%]">
                 <Avatar className="h-8 w-8 mr-2">
                   <AvatarImage src="/ai-avatar.png" />
-                  <AvatarFallback>AI</AvatarFallback>
+                  <AvatarFallback>CEO</AvatarFallback>
                 </Avatar>
                 <div className="rounded-lg p-4 bg-gray-100">
-                  <span className="animate-pulse">AI is typing...</span>
+                  <span className="animate-pulse">CEO is typing...</span>
                 </div>
               </div>
             </div>
