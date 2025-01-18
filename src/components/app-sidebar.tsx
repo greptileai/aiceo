@@ -31,7 +31,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <Card className="border-none shadow-none">
-          SaaS
+          AI SaaS
         </Card>
       </SidebarHeader>
       <SidebarContent>
